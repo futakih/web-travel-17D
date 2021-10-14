@@ -1,7 +1,19 @@
 /* resposive untuk tablet */
+*{
+  box-sizing: border-box;
+} 
 @media screen and (max-width: 1000px){
+  .section{
+    width: 100% ;
+  }
   .layar-dalam{
-    width: 50%;
+    width: 70%;
+  }
+  .intro{
+    padding: 0 20px;
+  }
+  .menu{
+    padding-right: 40px;
   }
   nav .menu ul{
     width: 50%;
@@ -15,7 +27,7 @@
   nav .logo{
     float: left;
     position: absolute;
-    left: 50px;
+    left: 30px;
   }
   section{
     width: auto;
@@ -24,14 +36,30 @@
     width: 50px;
   }
   .support{
-    display: flex;
-    
-    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
   }
   .support div{
+    padding: 10px 40px;
     width: 50%;
-    padding-bottom: 30px;
   }
+  section#gallery{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  section#gallery div img{
+    height: 120px;
+  }
+ 
+  footer .layar-dalam{
+    width: 100% ;
+    flex-wrap: wrap;
+  }
+  footer .layar-dalam div{
+    padding: 20px;
+    width: 50%;
+  }
+
 }
 
 /* resposive untuk smartphone */
@@ -52,4 +80,9 @@
    width: 100%;
    padding-bottom: 30px;
  }
+ footer .layar-dalam div{
+   padding: 20px;
+   width: 100%;
+   text-align: center;
+}
 }
