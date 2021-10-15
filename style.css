@@ -210,6 +210,14 @@ section#gallery div img:hover{
   transition: all 0.2 ease-in-out;
   transform: scale(1.1);
 }
+section#gallery div img:active{
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  transition: all 0.2 ease-in-out;
+  transform: scale(5);
+  z-index: 100;
+}
 section.quote{
   background: url('assets/background-bromo.jpg');
   background-attachment: fixed;
