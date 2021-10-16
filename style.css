@@ -105,7 +105,7 @@ header .intro .teks{
   margin: 20px 0px;
 }
 .tombol{
-  background-color: #01a3a4;
+  background-color: rgb(1,163,164,0.8);
   height: 40px;
   line-height: 42px;
   color:#fff;
@@ -114,11 +114,15 @@ header .intro .teks{
   padding: 0px 15px;
   font-size:15px;
   border-radius: 4px;
-  opacity: 0.8;
 }
 .tombol:hover{
+  background-color: rgb(1,163,164,1);
+  transition: all 0.5 s;
+}
+.tombol:active{
   opacity: 1;
   transition: all 0.5 s;
+  transform: scale(0.9);
 }
 header .overlay{
   position: absolute;
@@ -209,14 +213,6 @@ section#gallery div img{
 section#gallery div img:hover{
   transition: all 0.2 ease-in-out;
   transform: scale(1.1);
-}
-section#gallery div img:active{
-  position: fixed;
-  top: 40%;
-  left: 40%;
-  transition: all 0.2 ease-in-out;
-  transform: scale(5);
-  z-index: 100;
 }
 section.quote{
   background: url('assets/background-bromo.jpg');
